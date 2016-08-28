@@ -1,0 +1,67 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>OSS Menu</ion-title>
+
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-buttons end>
+            <button (click)="useraccountPage()">
+                <ion-icon ios="ios-person" md="md-person"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-padding class="home">
+    <ion-grid>
+        <ion-row>
+            <ion-col width-50>
+                <button clear (click)="relaPage()">
+                    <ion-card>
+                        <img src="img/relaicon.fw.png" />
+                    </ion-card>
+                </button>
+            </ion-col>
+            <ion-col width-50>
+                <button clear (click)="pdrmPage()">
+                    <ion-card>
+                        <img src="img/polisicon.fw.png" />
+                    </ion-card>
+                </button>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col width-50>
+                <button clear (click)="bombaPage()">
+                    <ion-card>
+                        <img src="img/bombaicon.fw.png" />
+                    </ion-card>
+                </button>
+            </ion-col>
+            <ion-col width-50>
+                <button clear (click)="pamPage()">
+                    <ion-card>
+                        <img src="img/jpamicon.fw.png" />
+                    </ion-card>
+                </button>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col width-50>
+                <button clear (click)="ambulancePage()">
+                    <ion-card>
+                        <img src="img/ambulanceicon.fw.png" />
+                    </ion-card>
+                </button>
+            </ion-col>
+            <ion-col width-50>
+                <button clear (click)="insurancePage()">
+                    <ion-card>
+                        <img src="img/insuranceicon.fw.png" />
+                    </ion-card>
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

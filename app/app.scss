@@ -1,0 +1,33 @@
+.sidemenu {
+    .toolbar {
+        height: 100px;
+    }
+    scroll-content {
+
+        .item {
+            min-height: 7.4rem;
+        }
+
+        ion-list {
+            .item:first-child {
+                border-top: 1px solid #333;
+            }
+            .item-inner {
+                border-bottom: 1px solid #626D71;
+            }
+            .item:last-child {
+                border-bottom: 1px solid #626D71;
+            }
+        }
+    }
+}
+
+.toolbar-background {
+    background: $themebg;
+}
+.toolbar-title {
+    color: #ffffff;
+}
+.bar-button-default {
+    color: #ffffff;
+}

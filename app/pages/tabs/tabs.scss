@@ -1,0 +1,12 @@
+.tabs {
+    ion-tabbar {
+        background: $themebg;
+
+        .tab-button {
+            color: #154490;
+        }
+        .tab-button[aria-selected=true] {
+            color: $iconcolor;
+        }
+    }
+}
