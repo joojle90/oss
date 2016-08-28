@@ -1,0 +1,75 @@
+<!--
+  Generated template for the RelaPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Rela</ion-title>
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-input placeholder="Name"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input placeholder="Email"></ion-input>
+        </ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-item>
+            <ion-label>Start Date</ion-label>
+            <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Ends Date</ion-label>
+            <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.ends"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Start Time</ion-label>
+            <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Ends Time</ion-label>
+            <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeEnds"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Event purpose?</ion-label>
+            <ion-select [(ngModel)]="relaService" [alertOptions]="relaServiceOpts">
+                <ion-option value="RT01">Wedding Party</ion-option>
+                <ion-option value="RT02">Event</ion-option>
+                <ion-option value="RT03">Conference</ion-option>
+                <ion-option value="RT04">Ceremonial</ion-option>
+                <ion-option value="RT05">Others</ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-list>
+
+    <ion-list>
+
+        <ion-item>
+            <ion-label>Number of personel required?</ion-label>
+            <ion-select [(ngModel)]="relaSize" [alertOptions]="relaSizeOpts">
+                <ion-option value="RS01">Big (More than 20) </ion-option>
+                <ion-option value="RS02">Medium (10 - 20 People)</ion-option>
+                <ion-option value="RS03">Small (Less than 10 People) </ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-list>
+
+    <button block (click)="relaMap()">Find Rela Service</button>
+</ion-content>
